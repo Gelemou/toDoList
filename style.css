@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/* 导航栏 */
+.navbar {
+    width: 100%;
+    min-height: 50px;
+    position: fixed;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/* 导航栏容器 */
+.navbar-container {
+    width: 95%;
+    margin: 0 auto;
+}
+/* 主标题 */
+.navbar-brand {
+    float: left;
+    height: 50px;
+    line-height: 22px;
+    color: #ddd;
+    padding: 15px;
+    font-size: 18px;
+}
+/* 主标题选中后 */
+.navbar-brand:hover {
+    color: #ff0000;
+    transition: 0.3s;
+}
+/* 导航列表 */
+.navbar-nav {
+    height: 50px;
+    margin: 0;
+}
+.navbar-nav > li {
+    float: left;
+    padding: 0;
+}
+.navbar-nav a:first-child {
+    padding-left: 20px;
+}
