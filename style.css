@@ -38,6 +38,7 @@ ul {
 .navbar-brand:hover {
     color: #ff0000;
     transition: 0.3s;
+    border-bottom: 1px solid #ff0000;
 }
 /* 导航列表 */
 .navbar-nav {
