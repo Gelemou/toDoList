@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="/assets/icon/iconfont.css" />
     </head>
     <body>
-        <div class="container">
+        <div class="topContainer">
             <nav class="navbar">
                 <div class="navbar-container">
                     <a class="navbar-brand" href="">TODOLIST</a>
@@ -41,7 +41,29 @@
                 </div>
             </nav>
         </div>
-        <div style="height: 1000px"></div>
+        <div class="mainContainer">
+            <h3>未完成任务</h3>
+            <div class="mainForm">
+                <div class="formBox">
+                    <div class="newTask">
+                        <label for="newTask">新建任务</label>
+                        <input
+                            class="input-new inputTemplate"
+                            type="text"
+                            id="newTask"
+                        />
+                    </div>
+                    <div class="group">
+                        <label for="group">分组</label>
+                        <input
+                            class="input-group inputTemplate"
+                            type="text"
+                            id="group"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="./script.js"></script>
     </body>
 </html>
