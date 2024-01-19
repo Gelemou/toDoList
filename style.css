@@ -11,6 +11,8 @@ a {
 }
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* input通用样式 */
@@ -31,6 +33,18 @@ ul {
         0 0 8px rgba(102, 175, 233, 0.6);
 }
 
+/* button通用样式 */
+.btnTemplate {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.btnTemplate:hover {
+    color: #fff;
+}
+
 /* 导航栏容器 */
 .topContainer {
     height: 70px;
@@ -40,6 +54,7 @@ ul {
     width: 100%;
     min-height: 50px;
     position: fixed;
+    z-index: 1000;
     background-color: rgba(0, 0, 0, 0.6);
 }
 /* 导航栏容器 */
@@ -117,19 +132,51 @@ ul {
     margin-top: 30px;
 }
 /* 添加任务按钮 */
-.addTaskBtn {
+.btn-addTask {
     width: 120px;
     height: 50px;
     font-size: 16px;
-    cursor: pointer;
-    background-color: #fff;
-    border: 1px solid transparent;
     border-color: #449d44;
-    border-radius: 5px;
     color: #449d44;
-    transition: all 0.2s;
 }
-.addTaskBtn:hover {
-    color: #fff;
+.btn-addTask:hover {
     background-color: #449d44;
+}
+/* 首页排序 */
+.sortBy {
+    position: relative;
+    height: 33px;
+    margin-top: 40px;
+}
+/* 排序按钮 */
+.btn-sortBy {
+    float: right;
+    width: 170px;
+    height: 100%;
+    font-size: 16px;
+    border-color: #2a6496;
+    color: #2a6496;
+}
+.btn-sortBy:hover {
+    background-color: #2a6496;
+}
+/* 排序按钮下拉列表 */
+.dropdownMenu {
+    position: absolute;
+    float: left;
+    right: 0;
+    top: 100%;
+    padding: 7px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+/* 下拉列表各个按钮 */
+.btn-dropdown {
+    width: 170px;
+    height: 33px;
+    font-size: 16px;
+    border-color: #2a6496;
+    color: #2a6496;
+}
+.btn-dropdown:hover {
+    background-color: #2a6496;
 }
