@@ -160,8 +160,16 @@ ul {
 .btn-sortBy:hover {
     background-color: #2a6496;
 }
+/* 下拉列表打开时按钮的样式 */
+.open {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
 /* 排序按钮下拉列表 */
 .dropdownMenu {
+    display: none;
     position: absolute;
     float: left;
     right: 0;
@@ -171,9 +179,10 @@ ul {
 }
 /* 下拉列表各个按钮 */
 .btn-dropdown {
-    width: 170px;
+    width: 160px;
     height: 33px;
     font-size: 16px;
+    margin-right: 5px;
     border-color: #2a6496;
     color: #2a6496;
 }
